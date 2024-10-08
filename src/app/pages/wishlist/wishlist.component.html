@@ -1,0 +1,8 @@
+<h2>Products</h2>
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - ${{ product.price }}
+    <button *ngIf="!isInWishlist(product.id)" (click)="addToWishlist(product)">Add to Wishlist</button>
+    <span *ngIf="isInWishlist(product.id)">In Wishlist</span>
+  </li>
+</ul>

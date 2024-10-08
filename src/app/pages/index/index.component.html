@@ -1,0 +1,98 @@
+<div class="">
+  <div class="row justify-content-between">
+    <div class="col-12 g-0 ms-auto py-4">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-secondary active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"  class="bg-secondary"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="bg-secondary"></button>
+        </div>
+        <div class="carousel-inner border border-1">
+          <div class="carousel-item active bg-black">
+            <div class="container-fluid g-0 d-flex">
+              <div class="align-self-center text-white ms-5 w-50">
+                <h1>Iphone 15</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, accusamus?</p>
+              </div>
+              <img src="images\iphone.jpeg" class="w-50" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Iphone</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid d-flex ">
+              <div class="align-self-center">
+                <h1>some text</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quo!</p>
+              </div>
+              <img src="images\Sony Playstation5 PS5 White Controller Design.jpeg" class="w-auto " alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid d-flex">
+              <div class="position-absolute text-white align-self-center px-3 w-50">
+                <h1>some text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, unde.</p>
+              </div>
+              <img src="images\keyboard.jpeg" class="d-block w-100 object-fit-cover" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="my-4 d-flex flex-column">
+    <h2 class="text-danger ">Categories</h2>
+    <h3>Browse By Category</h3>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-lg-3 mb-3" *ngFor="let category of bottomCategories">
+      <div class="card rounded-0 ">
+        <div class="card-body text-center">
+          <span >
+            <a routerLink="/product/{{ category.id }}">{{ category.category_data.category_name }}</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between my-3">
+    <div class="text-center">
+      <img src="images/Services.png" alt="" class="p-4">
+      <h4>FREE AND FAST DELIVERY</h4>
+      <p>Free delivery for all orders over $140</p>
+    </div>
+    <div class="text-center">
+      <img src="images/Services(1).png" alt="" class="p-4">
+      <h4>24/7 CUSTOMER SERVICE</h4>
+      <p>Friendly 24/7 customer support</p>
+    </div>
+    <div class="text-center">
+      <img src="images/Services(2).png" alt="" class="p-4">
+      <h4>MONEY BACK GUARANTEE</h4>
+      <p>We reurn money within 30 days</p>
+    </div>
+  </div>
+</div>
